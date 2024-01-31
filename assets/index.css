@@ -1,37 +1,45 @@
 body {
+  padding: 50px;
+  padding-inline: 300px;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   background: rgb(232, 232, 236);
-
   background: radial-gradient(circle, rgba(232, 232, 236, 1) 0%, rgba(181, 223, 232, 1) 100%);
+}
+h1 {
 }
 .container {
   text-align: center;
   width: 100%;
   min-height: 100%;
 }
+span {
+  transition: color 0.3s ease;
+}
+span:hover {
+  color: orangered;
+}
 
 input {
   padding: 5px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: solid 1px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 #aggiungi {
-  background: rgb(62, 62, 179);
   background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(51, 208, 243) 100%);
-
-  border-radius: 20px;
+  border-radius: 10px;
   border: solid 1px;
-  padding: 10px;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  padding-block: 20px;
 }
 #orderList {
-  background-color: aliceblue;
-  border-radius: 30px;
 }
 .crossLine {
   text-decoration: line-through;
@@ -40,4 +48,22 @@ ul {
 .buttonRem {
   border: none;
   background: none;
+  transition: color 0.3s ease;
+}
+.buttonRem:hover {
+  color: orangered;
+}
+#inputBlock {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+li {
+  margin-block: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 30px;
+  text-align: center;
 }

@@ -13,7 +13,9 @@ bottone.onclick = function () {
     const bottone = document.createElement("button");
     bottone.className = "buttonRem";
 
-    bottone.innerText = "X";
+    bottone.innerHTML = `<span class="material-symbols-outlined">
+    delete
+    </span>`;
 
     li.appendChild(bottone);
 
